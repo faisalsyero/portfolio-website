@@ -1,0 +1,203 @@
+/* Custom Styles for Portfolio Website */
+
+/* Root Variables */
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-bg: #f8f9fa;
+}
+
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Enhancements */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+/* Card Enhancements */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Button Styles */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headers */
+section h1, section h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Page Headers (Education, Work, Achievements, Portfolio) */
+.education-header,
+.work-header,
+.achievements-header,
+.portfolio-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Image Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Spacing Utilities */
+.mb-custom {
+    margin-bottom: 2rem;
+}
+
+.mt-custom {
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 300px;
+        padding: 2rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Card Body Flex for Equal Heights */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+/* List Styling in Cards */
+.card ul {
+    padding-left: 1.5rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Accessibility Enhancements */
+.nav-link:focus,
+.btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Animation for Page Load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.hero,
+section {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Text Styles */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Shadow Utilities */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Background Color Classes */
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+/* Dropdown Menu Enhancements */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-bg);
+}
+
+.dropdown-item.active {
+    background-color: var(--primary-color);
+}

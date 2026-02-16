@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="portfolio.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="education.html">Education</a></li>
+                                <li><a class="dropdown-item" href="work.html">Work Experience</a></li>
+                                <li><a class="dropdown-item" href="achievements.html">Achievements</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Portfolio Header -->
+        <section class="portfolio-header bg-primary text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4 mb-3">My Portfolio</h1>
+                <p class="lead">Explore my educational background, professional experience, and key achievements</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Overview Cards -->
+        <section class="portfolio-overview py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Education Card -->
+                    <article class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title h3">Education</h2>
+                                <p class="card-text flex-grow-1">
+                                    Discover my academic journey, including institutions attended, 
+                                    qualifications earned, and the knowledge foundation that supports 
+                                    my professional expertise. View detailed information about each 
+                                    educational milestone and how it has contributed to my development.
+                                </p>
+                                <a href="education.html" class="btn btn-primary mt-3">View Education</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Work Experience Card -->
+                    <article class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title h3">Work Experience</h2>
+                                <p class="card-text flex-grow-1">
+                                    Explore my professional history, including roles, responsibilities, 
+                                    and companies where I've contributed. Learn about the practical 
+                                    experience I've gained and the projects I've worked on throughout 
+                                    my career journey.
+                                </p>
+                                <a href="work.html" class="btn btn-primary mt-3">View Work Experience</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Achievements Card -->
+                    <article class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title h3">Achievements</h2>
+                                <p class="card-text flex-grow-1">
+                                    Browse through my notable accomplishments, awards, certifications, 
+                                    and recognition received throughout my educational and professional 
+                                    career. Each achievement represents a milestone in my journey of 
+                                    continuous growth and excellence.
+                                </p>
+                                <a href="achievements.html" class="btn btn-primary mt-3">View Achievements</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
